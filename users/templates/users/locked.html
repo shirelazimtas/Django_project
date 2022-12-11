@@ -1,0 +1,8 @@
+{% extends "project/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="content-section">
+    You Tried to login {{ failure_limit }} without any luck for {{ username }}
+    Please wait {{cooloff_timedelta}}
+  </div>
+{% endblock content %}
